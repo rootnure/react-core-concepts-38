@@ -10,6 +10,8 @@ function App() {
       <Device name='Laptop' price='55000'></Device>
       <Device name='mobile' brand='apple' price="60000"></Device>
       <Device name='watch' price="1200"></Device>
+      <Student grade="7" score="779"></Student>
+      <Student grade={9} score="779"></Student>
       <Person></Person>
       <Person></Person>
       <Person></Person>
@@ -25,12 +27,12 @@ function Person() {
   return <h2>Hi, I am {name}. I am {age} years old. I have {money ? money + 'tk.' : 'no money'} in my pocket</h2>
 }
 
-function Student() {
+function Student({grade = 0, score = 0}) {
   return (
     <div className='student'>
       <h3>This is a student</h3>
-      <p>Name: </p>
-      <p>Age: </p>
+      <p>Grade: {grade}</p>
+      <p>Score: {score}</p>
     </div>
   )
 }
