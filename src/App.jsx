@@ -8,7 +8,7 @@ function App() {
   return (
     <>
       <h1>Vite + React</h1>
-      <Todo
+      {/* <Todo
         task="Learn React"
         isDone={true}
       ></Todo>
@@ -19,7 +19,7 @@ function App() {
       <Todo
         task="Try JSX"
         isDone={true}
-      ></Todo>
+      ></Todo> */}
       {/* <Device name='Laptop' price='55000'></Device>
       <Device name='mobile' brand='apple' price="60000"></Device>
       <Device name='watch' price="1200"></Device>
